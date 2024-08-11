@@ -1,0 +1,59 @@
+body {
+  @apply bg-slate-900 text-white;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 50px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgb(99, 97, 97);
+  border-radius: 50px;
+}
+
+.logo {
+  @apply flex items-center gap-2 font-bold;
+}
+
+.heading {
+  @apply font-bold my-4;
+}
+
+.alert {
+  @apply p-4 w-full bg-red-500 rounded-md;
+}
+
+.active {
+  @apply bg-violet-700 rounded-md transition ease-in-out;
+}
+
+.tab-active {
+  @apply rounded-none border-violet-700 data-[state=active]:bg-transparent data-[state=active]:rounded-none data-[state=active]:border-b-2 data-[state=active]:text-violet-700 data-[state=active]:border-violet-700;
+}
+
+.card {
+  @apply bg-slate-800 rounded-md p-4;
+}
+
+.avatar {
+  @apply w-12 h-12 rounded-full;
+}
+
+.text-secondary {
+  @apply text-gray-400 text-sm;
+}
+
+.input {
+  @apply bg-slate-700 border-0 focus-visible:ring-0 focus-visible:ring-offset-0;
+}
+
+.btn-primary {
+  @apply bg-violet-700 hover:bg-violet-800;
+}
+
+.leftSideBar {
+  @apply h-screen bg-slate-800 p-4 hidden md:block;
+}
